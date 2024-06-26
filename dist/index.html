@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-F96utskS.css">
+</head>
+<body>
+<section class="container-fluid">
+  <header class="row">
+    <h4 class="col-xs-12 col-sm-4" onclick="showHideSections('trainingsplanSec')"><br>Trainingspläne<br></h4>
+    <h4 class="col-xs-12 col-sm-4" onclick="showHideSections('rekordeSec')"><br>Rekorde<br></h4>
+    <h4 class="col-xs-12 col-sm-4" onclick="showHideSections('trainingErklaerenSec')"><br>Übungen erklären lassen<br></h4>
+  </header>
+  <section class="trainingsplanSec" id="trainingsplanSec">
+    <div style="text-align: center">
+      <h1>Trainingspläne</h1>
+    </div>
+    <div class=" row justify-content-around align-items-center">
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('trainingHIIT')">
+        <h3>HIIT-Trainingspläne</h3>
+      </div>
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('ganzkoerperEigSec')">
+        <h3>Ganzkörper mit Eigengewicht</h3>
+      </div>
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('ganzkoerperZusSec')">
+        <h3>Ganzkörper mit Zusatzgewicht</h3>
+      </div>
+    </div>
+  </section>
+  <section class="rekordeSec" id="rekordeSec">
+    <div style="text-align: center">
+      <h1>Rekorde</h1>
+    </div>
+    <div class="row justify-content-around align-items-center">
+      <div class="rek col-md-2 col-sm-8 my-5" onclick="showHideSections('rekordeSquats')">
+        <h3>Rekorde Squats</h3>
+      </div>
+      <div class="rek col-md-2 col-sm-8 my-5" onclick="showHideSections('rekordeLatzug')">
+        <h3>Rekorde Latzug</h3>
+      </div>
+      <div class="rek col-md-2 col-sm-8 my-5" onclick="showHideSections('rekordeBankdruecken')">
+        <h3>Rekorde Bankdrücken</h3>
+      </div>
+    </div>
+    <div class="row justify-content-around align-items-center">
+      <div class="rek col-md-2 col-sm-8 my-5" onclick="showHideSections('rekordeLiegestuetze')">
+        <h3>Rekorde Liegestütze</h3>
+      </div>
+      <div class="rek col-md-2 col-sm-8 my-5" onclick="showHideSections('rekordeKlimmzuege')">
+        <h3>Rekorde Klimmzüge</h3>
+      </div>
+      <div class="rek col-md-2 col-sm-8 my-5" onclick="showHideSections('rekordeKreuzheben')">
+        <h3>Rekorde Kreuzheben</h3>
+      </div>
+    </div>
+  </section>
+  <section class="rekorde" id="rekordeSquats">
+
+  </section>
+  <section class="rekorde" id="rekordeLatzug">
+    
+  </section>
+  <section class="rekorde" id="rekordeBankdruecken">
+    
+  </section>
+  <section class="rekorde" id="rekordeLiegestuetze">
+    
+  </section>
+  <section class="rekorde" id="rekordeKlimmzuege">
+    
+  </section>
+  <section class="rekorde" id="rekordeKreuzheben">
+    
+  </section>
+  <section class="trainingErklaerenSec" id="trainingErklaerenSec">
+    <div style="text-align: center">
+      <h1>Übungen erklären lassen</h1>
+    </div>
+    <div class="row justify-content-around align-items-center">
+      <div class="uebung col-md-2 col-sm-8 my-5" onclick="showHideSections('erklaerenSquats')">
+        <h3>Squats</h3>
+        <img src="https://th.bing.com/th/id/OIP.na_WiWYtp_bQi1OP9cPcdgHaE8?rs=1&pid=ImgDetMain" alt="">
+      </div>
+      <div class="uebung col-md-2 col-sm-8 my-5" onclick="showHideSections('erklaerenBankdruecken')">
+        <h3>Bankdrücken</h3>
+        <img src="https://th.bing.com/th/id/OIP.9qcVqc_apexd-1uekO0FjwHaEz?rs=1&pid=ImgDetMain" alt="">
+      </div>
+      <div class="uebung col-md-2 col-sm-8 my-5" onclick="showHideSections('erklaerenKreuzheben')">
+        <h3>Kreuzheben</h3>
+        <img src="https://legionathletics.com/wp-content/uploads/2021/04/Image-3.png" alt="">
+      </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row justify-content-around align-items-center">
+      <div class="uebung col-md-2 col-sm-8 my-5" onclick="showHideSections('erklaerenLiegestuetze')">
+        <h3>Liegestütze</h3>
+        <img src="https://th.bing.com/th/id/OIP.zpJ5qP9dxrz4GiOlUTIR6wHaFj?rs=1&pid=ImgDetMain" alt="">
+      </div>
+      <div class="uebung col-md-2 col-sm-8 my-5" onclick="showHideSections('erklaerenKlimmzuege')">
+        <h3>Klimmzüge</h3>
+        <img src="https://th.bing.com/th/id/OIP.w4Id1YHm_y8CFecJdT0oHgHaFj?rs=1&pid=ImgDetMain" alt="">
+      </div>
+      <div class="uebung col-md-2 col-sm-8 my-5" onclick="showHideSections('erklaerenLatzug')">
+        <h3>Latzug</h3>
+        <img src="https://th.bing.com/th/id/OIP.J2hv6ZO7IrcWgwdXSpQypgHaE7?rs=1&pid=ImgDetMain" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="uebungenErklaeren" id="erklaerenSquats">
+
+  </section>
+  <section class="uebungenErklaeren" id="erklaerenBankdruecken">
+
+  </section>
+  <section class="uebungenErklaeren" id="erklaerenLiegestuetze">
+
+  </section>
+  <section class="uebungenErklaeren" id="erklaerenKlimmzuege">
+
+  </section>
+  <section class="uebungenErklaeren" id="erklaerenKreuzheben">
+
+  </section>
+  <section class="uebungenErklaeren" id="erklaerenLatzug">
+
+  </section>
+  <section class="trainingsSec " id="trainingHIIT">
+    <div style="text-align: center">
+      <h1>HIIT</h1>
+    </div>
+    <div class="row justify-content-around align-items-center">
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('trainingHIITOne')">
+          <h3>HIIT-Training mit Fokus auf Ausdauer</h3>
+      </div>
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('trainingHIITTwo')">
+        <h3>HIIT-Training mit Fokus auf den oberen Körper</h3>
+      </div>
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('trainingHIITThree')">
+        <h3>HIIT-Training mit Fokus auf den unteren Körper und Bauch</h3>
+      </div>
+    </div>
+  </section>
+  <section class="trainingsSec" id="ganzkoerperEigSec">
+    <div style="text-align: center">
+      <h1>Ganzkörper Eigengewicht</h1>
+    </div>
+    <div class="row justify-content-around align-items-center">
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('ganzkoerperEigOne')">
+        <h3>Training mit Fokus auf den ganzen Körper</h3>
+      </div>
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('ganzkoerperEigTwo')">
+        <h3>Training mit Fokus auf den oberen Körper</h3>
+      </div>
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('ganzkoerperEigThree')">
+        <h3>Training mit Fokus auf den unteren Körper und Bauch</h3>
+      </div>   
+    </div> 
+  </section>
+  <section class="trainingsSec" id="ganzkoerperZusSec">
+    <div style="text-align: center">
+      <h1>Ganzkörper Zusatzgewicht</h1>
+    </div>
+    <div class="row justify-content-around align-items-center">
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('ganzkoerperZusOne')">
+        <h3>Training mit Fokus auf den ganzen Körper</h3>
+      </div>
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('ganzkoerperZusTwo')">
+        <h3>Training mit Fokus auf den oberen Körper</h3>
+      </div>
+      <div class="trainingsplanDiv col-md-2 col-sm-8 my-5" onclick="showHideSections('ganzkoerperZusThree')">
+        <h3>Training mit Fokus auf den unteren Körper und Bauch</h3>
+      </div>  
+    </div>  
+  </section>
+  <section class="trainingsPlans row justify-content-around align-items-center" id="trainingHIITOne">
+    <div class="start" id="startHIIT1">
+      <button onclick="startTraining('listHIIT1', 'startHIIT1', 'timer1', 'PowRes1', 9)">Start</button>
+    </div>
+    <section class="oberSecListe" id="listHIIT1">
+      <div class="timer" id="timer1">00:45</div>
+      <div class="PowRes" id="PowRes1"></div>
+      <div class="listeTraining">
+        <p>1. Burpees</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>2. Mountain Climbers</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>3. High Knees</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>4. Jumping Squats</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>5. Plank Jacks</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>6. Jumping Lunges</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>7. Skater Hops</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>8. Bicyle Crunches</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>9. Box Jumps</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>10. Sprint in place</p>
+      </div>  
+      <div class="point"></div>      
+    </section>
+  </section>
+  <section class="trainingsPlans row justify-content-around align-items-center" id="trainingHIITTwo">
+    <div class="start" id="startHIIT2">
+      <button onclick="startTraining('listHIIT2', 'startHIIT2', 'timer2', 'PowRes2')">Start</button>
+    </div>
+      <section class="oberSecListe" id="listHIIT2">
+      <div class="timer" id="timer2">00:45</div>
+      <div class="PowRes" id="PowRes2"></div>
+      <div class="listeTraining">
+        <p>1. Liegestütze</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>2. Mountain Climbers</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>3. Pike Pushups</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>4. Plank</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>5. Trizepsdips</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>6. Liegstütze mit Rotation</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>7. Superman</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>8. Plank mit Rotation</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>9. Diamond Pushups</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>10. Pike Hold</p>
+      </div>
+      <div class="point"></div>      
+    </section>
+  </section>
+  <section class="trainingsPlans row justify-content-around align-items-center" id="trainingHIITThree">
+    <div class="start" id="startHIIT3">
+      <button onclick="startTraining('listHIIT3', 'startHIIT3', 'timer3', 'PowRes3')">Start</button>
+    </div>
+    <section class="oberSecListe" id="listHIIT3">
+      <div class="timer col-1" id="timer3">00:45</div>
+      <div class="PowRes col-1" id="PowRes3"></div>
+      <div class="listeTraining">
+        <p>1. Jump Squats</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>2. Lunges</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>3. Mountain Climbers</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>4. Burpees</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>5. Plank</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>6. Jumping Lunges</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>7. Squats mit Beinheben</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>8. Jumping Squats</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>9. Russian Twist</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>10. Plank Side Twist</p>
+      </div>
+      <div class="point"></div>
+    </section>
+  </section>
+  <section class="trainingsPlans row justify-content-around align-items-center" id="ganzkoerperZusOne">
+    <div class="start" id="startGanzkoerperZus1">
+      <button onclick="startFullTraining('startGanzkoerperZus1', 'listGanzkoerperZus1', 'rest1')">Start</button>
+    </div>
+    <section class="oberSecListe justify-content-around" id="listGanzkoerperZus1">
+      <div class="zurWei col-lg-3" id="zurueck1" onclick="zurueck()"><br>Zurück</div>
+      <div class="zurWei col-lg-3" id="weiter1" onclick="weiter('rest1', 8, ['dottGaEi1', 'dottGaEi2', 'dottGaEi3', 'dottGaEi4', 'dottGaEi5', 'dottGaEi6', 'dottGaEi7', 'dottGaEi8'])"><br>Weiter</div>
+      <div class="PowRest col-lg-3" id="rest1">2:00</div>
+      <div class="listeTraining">
+        <p>1. Liegestütze</p>
+      </div>
+      <div class="point" id="dottGaEi1"></div>
+      <div class="listeTraining">
+        <p>2. Klimmzüge</p>
+      </div>
+      <div class="point" id="dottGaEi2"></div>
+      <div class="listeTraining">
+        <p>3. Squats</p>
+      </div>
+      <div class="point" id="dottGaEi3"></div>
+      <div class="listeTraining">
+        <p>4. Lunges</p>
+      </div>
+      <div class="point" id="dottGaEi4"></div>
+      <div class="listeTraining">
+        <p>5. Pike Pushups</p>
+      </div>
+      <div class="point" id="dottGaEi5"></div>
+      <div class="listeTraining">
+        <p>6. Diamond Pushups</p>
+      </div>
+      <div class="point" id="dottGaEi6"></div>
+      <div class="listeTraining">
+        <p>7. Austrailien Chinups</p>
+      </div>
+      <div class="point" id="dottGaEi7"></div>
+      <div class="listeTraining">
+        <p>8. Plank </p>
+      </div>
+      <div class="point" id="dottGaEi8"></div>
+    </section>
+  </section>
+  <section class="trainingsPlans row justify-content-around align-items-center" id="ganzkoerperZusTwo">
+    <div class="start" id="startGanzkoerperZus2">
+      <button onclick="startFullTraining('startGanzkoerperZus2', 'listGanzkoerperZus2', 'rest2')">Start</button>
+    </div>
+    <section class="oberSecListe" id="listGanzkoerperZus2">
+      <div class="zurWei" id="zurueck2" onclick="zurueck()"><br>Zurück</div>
+      <div class="zurWei" id="weiter2" onclick="weiter('rest2', 8)"><br>Weiter</div>
+      <div class="PowRest" id="rest2">2:00</div>
+      <div class="listeTraining">
+        <p>1. Side-to-Side Pushups</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>2. Klimmzüge</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>3. Pushups</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>4. Austrailien Pullups</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>5. Pike Pushups</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>6. Diamond Pushups</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>7. Austrailien Chinups</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>8. Plank</p>
+      </div>
+      <div class="point"></div>
+    </section>
+  </section>
+  <section class="trainingsPlans row justify-content-around align-items-center" id="ganzkoerperZusThree">
+    <div class="start" id="startGanzkoerperZus3">
+      <button onclick="startFullTraining('startGanzkoerperZus3', 'listGanzkoerperZus3', 'rest3')">Start</button>
+    </div>
+    <section class="oberSecListe" id="listGanzkoerperZus3">
+      <div class="zurWei" id="zurueck3" onclick="zurueck()"><br>Zurück</div>
+      <div class="zurWei" id="weiter3" onclick="weiter('rest3', 6)"><br>Weiter</div>
+      <div class="PowRest" id="rest3">2:00</div>
+      <div class="listeTraining">
+        <p>1. Squats</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>2. Jumping Squats</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>3. Einbeiniges Kreuzheben</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>4. Lunges</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>5. Hipthrust</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>6. Plank</p>
+      </div>
+      <div class="point"></div>
+    </section>
+  </section>
+  <section class="trainingsPlans row justify-content-around align-items-center" id="ganzkoerperEigOne">
+    <div class="start" id="startGanzkoerperEig1">
+      <button onclick="startFullTraining('startGanzkoerperEig1', 'listGanzkoerperEig1', 'rest4')">Start</button>
+    </div>
+    <section class="oberSecListe" id="listGanzkoerperEig1">
+      <div class="zurWei" id="zurueck4" onclick="zurueck()"><br>Zurück</div>
+      <div class="zurWei" id="weiter4" onclick="weiter('rest4', 7)"><br>Weiter</div>
+      <div class="PowRest" id="rest4">2:00</div>
+      <div class="listeTraining">
+        <p>1. Bankdrücken</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>2. Langhantelrudern</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>3. Squats</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>4. Kurzhantel Military Press</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>5. Skullcrushers</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>6. Bizeps Curls</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>7. Plank</p>
+      </div>
+      <div class="point"></div>
+    </section>
+  </section>
+  <section class="trainingsPlans row justify-content-around align-items-center" id="ganzkoerperEigTwo">
+    <div class="start" id="startGanzkoerperEig2">
+      <button onclick="startFullTraining('startGanzkoerperEig2', 'listGanzkoerperEig2', 'rest5')">Start</button>
+    </div>
+    <section class="oberSecListe" id="listGanzkoerperEig2">
+      <div class="zurWei" id="zurueck5" onclick="zurueck()"><br>Zurück</div>
+      <div class="zurWei" id="weiter5" onclick="weiter('rest5', 9)"><br>Weiter</div>
+      <div class="PowRest" id="rest5">2:00</div>
+      <div class="listeTraining">
+        <p>1. Bankdrücken</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>2. Latzug</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>3. Seilzug Butterfly's</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>4. Langhantelrudern</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>5. Kurzhantel Military Press</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>6. Seitheben</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>7. Trizepsstrecken</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>8. Hammercurls</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>9. Plank</p>
+      </div>
+      <div class="point"></div>
+    </section>
+  </section>
+  <section class="trainingsPlans row justify-content-around align-items-center" id="ganzkoerperEigThree">
+    <div class="start" id="startGanzkoerperEig3">
+      <button onclick="startFullTraining('startGanzkoerperEig3', 'listGanzkoerperEig3', 'rest6')">Start</button>
+    </div>
+    <section class="oberSecListe" id="listGanzkoerperEig3">
+      <div class="zurWei" id="zurueck6" onclick="zurueck()"><br>Zurück</div>
+      <div class="zurWei" id="weiter6" onclick="weiter('rest6', 6)"><br>Weiter</div>
+      <div class="PowRest" id="rest6">2:00</div>
+      <div class="listeTraining">
+        <p>1. Beinpresse</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>2. Squats</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>3. Lunges</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>4. Beincurls</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>5. Hipthrust</p>
+      </div>
+      <div class="point"></div>
+      <div class="listeTraining">
+        <p>6. Plank</p>
+      </div>
+      <div class="point"></div>
+    </section>
+  </section>
+</section>
+  <script src="dist/main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+         

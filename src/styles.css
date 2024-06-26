@@ -1,0 +1,163 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+header h4{
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  height: 10vh;
+  float: left;
+  font-size: large;
+  text-align: center;
+}
+.trainingsplanSec{
+  height: 75vh;
+  width: 100%;
+}
+.trainingsplanDiv{
+  background-color: rgb(151, 46, 46);
+  height: 30vh;
+  width: 20%;
+  color: white;
+  font-size: 20%;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+.rekordeSec{
+  height: 75vh;
+  display: none;
+}
+.rek{
+  background-color: rgb(151, 46, 46);
+  height: 20vh;
+  width: 20%;
+  color: white;
+  font-size:medium;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+.trainingErklaerenSec{
+  height: 100vh;
+  display: none;
+}
+.uebung{
+  background-color: rgb(151, 46, 46);
+  height: 30vh;
+  width: 25%;
+  color: white;
+  font-size:medium;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+.uebung img{
+  width: 80%;
+  height: 60%;
+  border-radius: 5px;
+}
+.trainingsSec{
+  height: 75vh;
+  display: none;
+}
+.training{
+  background-color: rgb(151, 46, 46);
+  height: 40%;
+  width: 25%;
+  float: left;
+  margin-top: 15%;
+  margin-left: 6.5%;
+  color: white;
+  font-size:medium;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+.trainingsPlans{
+  height: 100vh;
+  background-color: white;
+  color: black;
+  display: none;
+}
+.rekorde{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: none;
+}
+.uebungenErklaeren{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: none;
+}
+.trainingsPlans{
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.start{
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  height: 50%;
+  width: 30%;
+  float: left;
+  margin-top: 30vh;
+  margin-left: 35%;
+  position: absolute;
+}
+.start > button{
+  margin: auto;
+  font-size: 8vh;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+.oberSecListe {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  display: none;
+}
+.listeTraining{
+  width: 30vh;
+  height:5vh;
+  border: 1px solid black;
+  float: left;
+  clear: both;
+  margin-left: 10%;
+}
+.timer{
+  font-size: 200%;
+}
+.PowRes{
+  font-size: 150%;
+}
+.point{
+  height: 5vh;
+  width: 30px;
+  border-radius: 50%;
+  background-color: green;
+  float: left;
+  display: none;
+}
+.zurWei{
+  border: 5px solid black;
+  border-radius: 50%;
+  height: 15vh;
+  width: 15vh;
+  text-align: center;
+  align-items: center;
+  float: left;
+  margin: 2vh;
+}
